@@ -9,7 +9,7 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/rajeshgangoni/Multibranch_Restassured.git'
             }
          }        
-       stage('Build '){
+       stage('Build the package'){
             steps{
                 sh 'mvn clean package'
             }
