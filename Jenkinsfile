@@ -6,7 +6,9 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-                git branch: 'main', url: 'https://github.com/rajeshgangoni/Multibranch_Restassured.git'
+                lock('my-unique-resource'){
+                  git branch: 'main', url: 'https://github.com/rajeshgangoni/Multibranch_Restassured.git'
+                }          
             }
          }        
        stage('Build the package'){
