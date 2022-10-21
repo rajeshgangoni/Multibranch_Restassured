@@ -11,7 +11,7 @@ pipeline{
             steps{
                 //lock('my-unique-resource'){
                   git branch: 'main', url: 'https://github.com/rajeshgangoni/Multibranch_Restassured.git'
-                  sleep 60
+                  //sleep 60
                 //}
             }
          }        
