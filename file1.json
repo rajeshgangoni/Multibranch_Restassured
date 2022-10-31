@@ -1,0 +1,11 @@
+{
+  "totalPackages" : 22,
+  "directPackages" : 22,
+  "createdOn" : "2022-10-27T15:21:49.698284Z",
+  "riskScore" : 7.0,
+  "totalOutdatedPackages" : 14,
+  "highVulnerabilityCount" : 1,
+  "mediumVulnerabilityCount" : 2,
+  "lowVulnerabilityCount" : 0,
+  "totalOkLibraries" : 19
+}
