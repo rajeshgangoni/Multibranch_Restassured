@@ -23,7 +23,8 @@ pipeline{
     }
     post{
         always {
-          junit 'test-output/junitreports/*.xml'
+          //junit 'test-output/junitreports/*.xml'
+            emailext body: 'Sending test mail', subject: 'Test',recipientProviders: [[$class: 'DevelopersRecipientProvider ']]
         }
     }
 }  
